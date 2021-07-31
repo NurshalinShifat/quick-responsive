@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+}
+.col-3 {
+  max-width: 33.33%;
+  flex: 1 0 33.33%;
+  padding: 15px;
+}
+
+/*Header*/
+
+header {
+  border-bottom: 2px solid #3b506c1a;
+}
+header .row {
+  align-items: center;
+}
+.logo {
+  flex-basis: 20%;
+  max-width: 20%;
+}
+.logo a {
+}
+.logo a img {
+}
+nav {
+  flex-basis: 80%;
+  max-width: 80%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+nav ul li {
+}
+
+nav ul li a {
+  color: #3b506c;
+  padding: 20px 15px;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  transition-duration: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #3b506c;
+  color: white;
+}
+
+/*Banner*/
+
+.banner-section {
+  padding: 50px 0;
+}
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-size: 55px;
+  color: #162c48;
+}
+.content h1 span {
+  display: block;
+  color: #0072ffe3;
+}
+.content img {
+  max-width: 550px;
+}
+.content p {
+  color: #3b506cdb;
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/*Feature*/
+
+.feature-section {
+}
+.feature-section .row {
+  justify-content: center;
+}
+.feature-content {
+}
+.feature-content h2 {
+  color: #162c48;
+  line-height: 1;
+  font-weight: 800;
+  font-size: 50px;
+}
+.feature-content h2 span {
+  color: #ff4141;
+}
+.feature-content p {
+  color: #3b506cdb;
+  margin: 5px auto;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*blog section*/
+
+.blog-section {
+  padding: 50px 0;
+}
+.post {
+  padding: 60px 30px;
+}
+.illustration-5 {
+  background: #fdebed;
+  border-radius: 50px;
+  box-shadow: 15px 15px 30px #8f8f8f, -15px -15px 30px #ffffff;
+}
+
+.illustration-5:hover {
+  background: #ebf9f4;
+}
+
+.illustration-6 {
+  background: #ebf9f4;
+  border-radius: 50px;
+  box-shadow: 15px 15px 30px #8f8f8f, -15px -15px 30px #ffffff;
+}
+
+.illustration-6:hover {
+  background: #fff7e8;
+}
+
+.illustration-7 {
+  background: #fff7e8;
+  border-radius: 50px;
+  box-shadow: 15px 15px 30px #8f8f8f, -15px -15px 30px #ffffff;
+}
+
+.illustration-7:hover {
+  background: #fdebed;
+}
+
+.post h3 {
+  color: #162c48;
+  line-height: 1;
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.post p {
+  color: #3b506cdb;
+  margin: 5px auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.post img {
+  max-height: 160px;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+/*footer section*/
+footer {
+  background: #0072ffe3;
+  text-align: center;
+  padding: 30px 0;
+}
+footer p {
+  color: #bdcde2f6;
+}
+footer p strong {
+  color: white;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .content h1 {
+    font-size: 45px;
+    color: #162c48;
+  }
+  .content p {
+    max-width: 700px;
+    font-size: 17px;
+  }
+  .content img {
+    max-width: 400px;
+  }
+  .feature-content h2 {
+    font-size: 35px;
+  }
+  .feature-content p {
+    font-size: 16px;
+  }
+  .post h3 {
+    font-size: 20px;
+  }
+  .post p {
+    font-size: 16px;
+  }
+  .post img {
+    max-height: 130px;
+  }
+  .post {
+    padding: 35px 20px;
+  }
+  footer {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+  .feature-content h2 {
+    font-size: 27px;
+  }
+  .feature-content p {
+    font-size: 14px;
+  }
+  .post p {
+    font-size: 14px;
+  }
+  .post img {
+    max-height: 105px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo,
+  nav {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  .logo {
+    text-align: center;
+    padding: 10px 0;
+  }
+  nav ul li a {
+    padding: 7px 10px;
+    font-size: 15px;
+  }
+  .content h1 {
+    font-size: 32px;
+  }
+  .col-3 {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+  .feature-content {
+    text-align: center !important;
+  }
+  .feature-content h2 {
+    font-size: 35px;
+  }
+  .post {
+    padding: 45px 25px;
+    text-align: center;
+  }
+  .post img {
+    max-height: 100%;
+  }
+  .post h3 {
+    font-size: 28px;
+  }
+  .post p {
+    font-size: 18px;
+  }
+}
